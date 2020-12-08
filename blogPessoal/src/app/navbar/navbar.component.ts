@@ -1,7 +1,6 @@
-import { environment } from './../../environments/environment.prod';
-import { AuthService } from './../service/auth.service';
-import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { AuthService } from '../service/auth.service';
 
 @Component({
   selector: 'app-navbar',
@@ -15,18 +14,11 @@ export class NavbarComponent implements OnInit {
     public auth: AuthService
   ) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
   }
-
-  sair() {
+  sair(){
     this.router.navigate(['/login'])
-    environment.token = ''
-    environment.nome = ''
-    environment.foto = ''
-    environment.bio = ''
-    environment.gitHub = ''
-    environment.linkedin = ''
+    localStorage.clear()
   }
-
 
 }

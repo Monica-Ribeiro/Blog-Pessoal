@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { environment } from './../../environments/environment.prod';
 
 @Component({
   selector: 'app-perfil-lateral',
@@ -8,13 +7,8 @@ import { environment } from './../../environments/environment.prod';
 })
 export class PerfilLateralComponent implements OnInit {
 
+  nome: string = 'Jacqueline Barbosa';
 
-  nomeUser = environment.nome
-  fotoUser = environment.foto
-  bioUser = environment.bio
-  linkedin = environment.linkedin
-  github = environment.gitHub
-  
   constructor() { }
 
   ngOnInit() {

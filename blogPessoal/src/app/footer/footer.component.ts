@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { faFacebook } from '@fortawesome/free-brands-svg-icons'
-import { faInstagram } from '@fortawesome/free-brands-svg-icons'
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import{faInstagram} from '@fortawesome/free-brands-svg-icons'
+import{faGithub} from '@fortawesome/free-brands-svg-icons'
+import{faLinkedin} from '@fortawesome/free-brands-svg-icons'
+
 
 @Component({
   selector: 'app-footer',
@@ -9,10 +10,9 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent implements OnInit {
-
-  faFacebook = faFacebook
-  faInstagram = faInstagram
-  faLinkedin = faLinkedin
+faFacebook=faFacebook
+faGithub=faGithub
+faLinkedin=faLinkedin
 
   constructor() { }
 
